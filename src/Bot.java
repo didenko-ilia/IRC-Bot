@@ -35,7 +35,7 @@ public class Bot {
         if (socket.isConnected())
         {
             out.write("NICK " + name + "\n");
-            out.write("USER " + User + "* 8 " + RealName + "\n");
+            out.write("USER " + User + " * 8 " + RealName + "\n");
             out.write("JOIN " + Channel + "\n");
             out.flush();
         }
